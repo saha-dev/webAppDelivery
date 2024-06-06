@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+    box-sizing: border-box;
+}
+
+.header {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    width: 100%;
+}
+
+.logo {
+    margin: 0 6px 0 20px;
+}
+
+.clock {
+    margin: 12px 6px;
+}
