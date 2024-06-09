@@ -126,12 +126,24 @@ body {
 }
 
 .menu-list-item-image {
-    /* max-width: 100px; */
-    /* height: 75px; */
-    /* flex-shrink: 0; */
-    /* cursor: pointer; */
+    text-align: right;
 }
 
-.menu-list-item-image img {
-    /* object-fit: cover; */
+.item-image {
+    height: 125px;
+    margin-bottom: 10px;
+    /* width: 125px; */
+}
+.btn-cont {
+    text-align: center;
+}
+
+.btn-buy {
+    border: none;
+    width: 100px;
+    height: 30px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
 }
