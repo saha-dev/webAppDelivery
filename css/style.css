@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 20px 0;
+    margin: 20px 0 10px 20px;
     height: var(--header-size);
 }
 
@@ -24,7 +24,6 @@ body {
     height: var(--header-size);
     width: var(--header-size);
     border: none;
-    margin-left: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -45,21 +44,22 @@ body {
     margin-right: 20px;
 }
 
-.searchText {
+.search-text {
     border: 2px solid var(--main-color);
     border-right: none;
     border-radius: 5px 0 0 5px;
     padding: 2px;
     outline: none;
     width: 340px;
-}
-
-.searchText::placeholder {
     font-size: 1.2rem;
-    opacity: 75%;
 }
 
-.searchButton {
+.search-text::placeholder {
+    font-size: 1.2rem;
+    color: lightgray;
+}
+
+.search-button {
     background: url('../img/loupe.svg') center no-repeat;
     height: var(--header-size);
     width: var(--header-size);
@@ -75,10 +75,9 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 20px;
+    margin: 0 0 10px 20px;
     overflow-y: hidden;
     overflow-x: auto;
-    /* height: 32px; */
 }
 
 .head-menu-item {
@@ -94,7 +93,11 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .searchText {
+    .search-text {
         width: 200px;
     }
+}
+
+.container {
+    margin-left: 20px;
 }
