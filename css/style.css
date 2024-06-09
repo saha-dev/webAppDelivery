@@ -132,7 +132,6 @@ body {
 .item-image {
     height: 125px;
     margin-bottom: 10px;
-    /* width: 125px; */
 }
 .btn-cont {
     text-align: center;
@@ -146,4 +145,32 @@ body {
     color: white;
     font-size: 1.2rem;
     text-align: center;
+}
+
+.btns-amaunts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-plus {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent 35%, #000 35%, #000 65%, transparent 65%),
+        linear-gradient(to right, transparent 35%, #000 35%, #000 65%, transparent 65%);
+}
+
+.btn-minus {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent 35%, #000 35%, #000 65%, transparent 65%);
+    /* linear-gradient(to right, transparent 35%, #000 35%, #000 65%, transparent 65%); */
+}
+
+.amaunt {
+    margin: 0 10px 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
