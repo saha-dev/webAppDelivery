@@ -6,9 +6,10 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
-    box-sizing: border-box;
 }
 
 .header {
@@ -62,4 +63,22 @@ body {
     color: white;
     padding: 0;
     cursor: pointer;
+}
+
+.head-menu-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.head-menu-item {
+    cursor: pointer;
+    background-color: var(--main-color);
+    text-decoration: none;
+    margin-right: 8px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    flex-shrink: 0;
 }
