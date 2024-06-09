@@ -1,5 +1,6 @@
 :root {
     --main-color: #76eee2;
+    --header-size: 36px;
 }
 
 body {
@@ -13,15 +14,14 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     align-items: flex-start;
     margin: 20px 0;
-    height: 24px;
+    height: var(--header-size);
 }
 
 .burger-btn {
-    height: 24px;
-    width: 24px;
+    height: var(--header-size);
+    width: var(--header-size);
     border: none;
     margin-left: 20px;
     background-color: white;
@@ -32,13 +32,13 @@ body {
 }
 
 .burger-btn span {
-    width: 24px;
+    width: var(--header-size);
     height: 3px;
     background-color: var(--main-color);
 }
 
 .search {
-    height: 24px;
+    height: var(--header-size);
     position: relativ;
     display: flex;
     margin-right: 20px;
@@ -48,15 +48,14 @@ body {
     border: 2px solid var(--main-color);
     border-right: none;
     border-radius: 5px 0 0 5px;
-    height: 16px;
     padding: 2px;
-    /* outline: none; */
+    outline: none;
 }
 
 .searchButton {
     background: url('../img/loupe.svg') center no-repeat;
-    height: 24px;
-    width: 24px;
+    height: var(--header-size);
+    width: var(--header-size);
     border: none;
     border-radius: 0px 5px 5px 0px;
     background-color: var(--main-color);
