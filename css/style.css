@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 20px 0 15px 20px;
+    margin: 15px 20px 15px 20px;
     height: var(--header-size);
 }
 
@@ -41,7 +41,6 @@ body {
     height: var(--header-size);
     position: relativ;
     display: flex;
-    margin-right: 20px;
 }
 
 .search-text {
@@ -99,19 +98,18 @@ body {
 }
 
 .dish-list {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
 }
 
 .menu-list-item {
     display: flex;
     justify-content: space-between;
-    cursor: pointer;
     border-bottom: 1px solid #e8e8e8;
     margin-top: 10px;
     padding-bottom: 15px;
 }
 
-.menu-list-item-content {
+.item-content {
     margin-right: 10px;
 }
 
@@ -119,25 +117,27 @@ body {
     margin-top: 0;
 }
 
-.price {
+.item-price {
     margin: 5px 0;
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-.menu-list-item-image {
+.item-image-wrapper {
     text-align: right;
 }
 
 .item-image {
     height: 125px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
-.btn-cont {
+
+.item-buttons {
     text-align: center;
 }
 
-.btn-buy {
+.item-button-buy {
     border: none;
     width: 100px;
     height: 30px;
@@ -145,32 +145,56 @@ body {
     color: white;
     font-size: 1.2rem;
     text-align: center;
+    border-radius: 5px;
 }
 
-.btns-amaunt {
+.item-buttons-plus-minus {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn-plus {
+.item-minus,
+.item-plus {
+    --l: 20px; /* size of the symbol */
+    --s: 7px; /* space around the symbol */
+    display: inline-block;
+    width: var(--l);
+    height: var(--l);
+    padding: var(--s);
+    border-radius: 5px;
+}
+
+.item-minus {
+    --t: 4px; /* Thickness */
+    --c1: #fff; /* Plus color*/
+    --c2: var(--main-color); /* background color*/
+    background: linear-gradient(var(--c1) 0 0) content-box, var(--c2);
+    background-position: center;
+    background-size: 100% var(--t), var(--t) 100%;
+    background-repeat: no-repeat;
+}
+.item-plus {
+    --t: 4px; /* Thickness */
+    --c1: #fff; /* Plus color*/
+    --c2: var(--main-color); /* background color*/
+
+    background: linear-gradient(var(--c1) 0 0) content-box, linear-gradient(var(--c1) 0 0) content-box, var(--c2);
+    background-position: center;
+    background-size: 100% var(--t), var(--t) 100%;
+    background-repeat: no-repeat;
+}
+
+.item-amоunt {
+    margin: 0 10px 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* .item-button-plus {
     border: none;
     width: 20px;
     height: 20px;
     background: linear-gradient(to bottom, transparent 35%, #000 35%, #000 65%, transparent 65%),
         linear-gradient(to right, transparent 35%, #000 35%, #000 65%, transparent 65%);
-}
-
-.btn-minus {
-    border: none;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(to bottom, transparent 35%, #000 35%, #000 65%, transparent 65%);
-    /* linear-gradient(to right, transparent 35%, #000 35%, #000 65%, transparent 65%); */
-}
-
-.amaunt {
-    margin: 0 10px 0 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
+} */
